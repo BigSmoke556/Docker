@@ -36,8 +36,8 @@ Isso irá iniciar os containers definidos no arquivo `docker-compose.yml`.
 Após subir os containers, você pode executar comandos dentro do container do backend. 
 
 ```powershell
-php artisan key:generate --force || true
-php artisan migrate --force || true
+php artisan key:generate --force 
+php artisan migrate --force 
 ```
 
 Esses comandos geram a chave da aplicação e executam as migrações do banco de dados.
@@ -65,7 +65,7 @@ php artisan company:create-task
 
 Ao executar este comando, você será guiado por prompts para informar os dados da tarefa e da empresa relacionada. Preencha conforme solicitado para concluir a criação da tarefa.
 
-> **Importante:** Apenas o usuário de id 1 de cada empresa possui permissão para criar tarefas para os demais usuários da mesma empresa. Usuários com outros ids não conseguem criar tasks para outros membros.
+> **Importante:** O primeiro usuário cadastrado em cada empresa é considerado o administrador (admin) e somente ele possui permissão para criar tarefas para os demais usuários da mesma empresa. Usuários que não são administradores não conseguem criar tasks para outros membros.
 
 ## Parando os containers
 
