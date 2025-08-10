@@ -80,7 +80,7 @@ docker-compose down
 
 Os serviços utilizam as seguintes portas:
 
-- **Banco de dados (MySQL):** 33060 (externa) → 3306 (container)
+- **Banco de dados (MySQL):** 3306 (externa) → 3306 (container)
 - **Backend (Laravel):** 8000 (externa) → 8000 (container)
 - **Frontend (Vue.js):** 8080 (externa) → 8080 (container)
 
