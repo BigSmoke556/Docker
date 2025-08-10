@@ -1,0 +1,13 @@
+# root-level dockerignore
+.git
+**/.git
+**/.env
+node_modules
+**/node_modules
+vendor
+**/vendor
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+.idea
+.vscode
